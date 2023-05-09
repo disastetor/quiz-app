@@ -33,7 +33,7 @@ function App() {
     setGameOver(false);
     const newQuestions = await fetchQuizQuestions(
       TOTAL_QUESTIONS,
-      Difficulty.MEDIUM
+      Difficulty.HARD
     );
     setQuestions(newQuestions);
     setScore(0);
@@ -140,7 +140,7 @@ function App() {
         </Container>
         <Container className="h-25">
           <Row className="" style={{ fontSize: '2em' }}>
-            <span>Score: {score}</span>
+            {!gameOver && !loading && <span>Score: {score}</span>}
           </Row>
         </Container>
       </Container>
