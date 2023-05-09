@@ -26,7 +26,7 @@ function App() {
   const [userAnswers, setUserAnswers] = useState<AnswerObject[]>([]);
   const [score, setScore] = useState<number>(0);
   const [gameOver, setGameOver] = useState<boolean>(true);
-
+  //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
   // Start the game
   const startTrivia = async () => {
     setLoading(true);
